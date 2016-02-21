@@ -17,15 +17,13 @@
 	6. Extracts only the measurements on the mean and standard deviation for each measurement.
 	7. Uses descriptive activity names (by reading activity_labels.txt) to name the activities in the data set (by renaming the factor levels).
 	8. Appropriately labels the data set with descriptive variable names (the existing variable names are appropriate).
-	9. Creates a second, independent tidy data set (ans) with the average of each variable for each activity and each subject (see below for detailed explanation).
-	  
-	#### Explanation of Step 9.  
-	  1. Melt feature variables into single column (yields alldataMelt).
-	  2. Rearrange columns of alldataMelt: subject, acitivity, variable, value
-	  3. Create alldataMelt$temp column to facilitate future application of summarise.
-	  4. Group alldataMelt by "temp"
-	  5. Summarise "value" (take mean) in alldataMelt (which removes "subject" and "activity" columns)
-	  6. Separate "temp" to recover lost columns 
-	  7. Spread "measurement" column with key = measurement and value = average (yields the tidy data set ans).
-	  8. Sort ans by "subject" (numeric), then by "activity."  
+	9. Creates a second, independent tidy data set (ans) with the average of each variable for each activity and each subject (see below for detailed explanation):
+	  a. Melt feature variables into single column (yields alldataMelt).
+	  b. Rearrange columns of alldataMelt: subject, acitivity, variable, value
+	  c. Create alldataMelt$temp column to facilitate future application of summarise.
+	  d. Group alldataMelt by "temp"
+	  e. Summarise "value" (take mean) in alldataMelt (which removes "subject" and "activity" columns)
+	  f. Separate "temp" to recover lost columns 
+	  g. Spread "measurement" column with key = measurement and value = average (yields the tidy data set ans).
+	  h. Sort ans by "subject" (numeric), then by "activity," giving final version of ans.  
 
