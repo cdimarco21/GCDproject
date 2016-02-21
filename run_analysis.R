@@ -65,4 +65,9 @@ alldataMelt <- mutate(alldataMelt,
 ans <- alldataMelt %>% 
       group_by(temp) %>% 
       summarise(average = mean(value)) %>%
-      separate(temp, c("subject", "activity", "measurement"), " - ")
+      separate(temp, c("subject", "activity", "measurement"), " - ") %>%
+      spread(measurement, average)
+      
+#Sort ans by subject, then activity
+ans$subject <- as.numeric(ans$subject)
+ans <- ans[order(ans$subject, ans$activity), ]
