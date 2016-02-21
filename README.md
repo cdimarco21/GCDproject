@@ -1,14 +1,14 @@
-This is a modification of the original README.txt found below.
+## This is a modification of the original README.txt found below.
 
-1. None of the original files were modified.  
+### None of the original files were modified.  
 
-2. There is 1 new script (run_analysis.R), 1 new data set (MyData.csv), an updated README (this document), and a codebook (CodeBook.md).
+1. There is 1 new script (run_analysis.R), 1 new data set (MyData.csv), an updated README (this document), and a codebook (CodeBook.md).
 
-3. run_analysis.R reads the original data and transforms them into a tidy data set called MyData.csv. (For more information, see CodeBook.md.)
+2. run_analysis.R reads the original data and transforms them into a tidy data set called MyData.csv. (For more information, see CodeBook.md.)
 
-4. MyData.csv contains the average of each variable for each activity and each subject.
+3. MyData.csv contains the average of each variable for each activity and each subject.
 
-5. CodeBook.md contains a description of the cleaning done by run_analysis.R.
+4. CodeBook.md contains a description of the cleaning done by run_analysis.R.
 
 
 
@@ -25,7 +25,7 @@ Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
