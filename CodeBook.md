@@ -1,12 +1,11 @@
 ## This is a description of the tbl MyData.csv and the script that creates it (run_analysis.R).
 
 
-### MyData.csv has 4 variables.  The following variable descriptions also describe the data.
+### MyData.csv has 68 columns.  The following variable descriptions also describe the data.
 
-	1. subject: 	 integer between 1 and 30 assigned to the individual who performed the activity 
-	2. activity: 	 activity performed by the individual (activity names are self-explanatory)
-	3. measurement:	 name of measurement that was taken in experiment
-	4. average:	 mean of associated measurement for specified subject and activity in that row
+	1. 	subject: 	 (id variable) integer between 1 and 30 assigned to the individual who performed the activity 
+	2. 	activity: 	 (id variable) activity performed by the individual (activity names are self-explanatory)
+	3-68. 	features:	 Column names 3 through 68 are the "features" given in the original features.txt that measure mean and standard deviation.
 
 ### Description of run_analysis.R. 
 	1. Load packages dplyr, tydyr, reshape2.
